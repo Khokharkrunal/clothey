@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header nav {
+            margin-top: 10px;
+        }
+
+        header nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .pricing-table {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .pricing-option {
+            border: 1px solid #ddd;
+            padding: 20px;
+            width: 30%;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        form input {
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+
+        form button {
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header for all pages -->
+    <header>
+        <h1>E-commerce Store</h1>
+        <nav>
+            <a href="#privacy-policy">Privacy Policy</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#signin">Sign In</a>
+            <a href="#profile">Profile</a>
+        </nav>
+    </header>
+
+    <!-- Privacy Policy Page -->
+    <section id="privacy-policy">
+        <h2>Privacy Policy</h2>
+        <p>Welcome to our Privacy Policy. This page outlines the types of personal information we collect, how we use it, and how we protect it.</p>
+        <h3>Information We Collect</h3>
+        <p>We may collect personal information such as your name, email address, and payment information to provide services.</p>
+        <h3>How We Use Your Information</h3>
+        <p>Your information is used to process orders, improve our website, and communicate with you regarding updates or promotions.</p>
+        <h3>Data Protection</h3>
+        <p>We take security seriously and implement measures to protect your data from unauthorized access.</p>
+    </section>
+
+    <!-- Pricing Page -->
+    <section id="pricing">
+        <h2>Our Plans</h2>
+        <div class="pricing-table">
+            <div class="pricing-option">
+                <h3>Basic Plan</h3>
+                <p>$19.99/month</p>
+                <p>Access to basic features</p>
+            </div>
+            <div class="pricing-option">
+                <h3>Premium Plan</h3>
+                <p>$49.99/month</p>
+                <p>Access to all features</p>
+            </div>
+            <div class="pricing-option">
+                <h3>Enterprise Plan</h3>
+                <p>$99.99/month</p>
+                <p>Advanced features and support</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sign In Page -->
+    <section id="signin">
+        <h2>Sign In</h2>
+        <form action="#profile" method="POST">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Sign In</button>
+        </form>
+    </section>
+
+    <!-- Profile Page -->
+    <section id="profile">
+        <h2>Your Profile</h2>
+        <p>Welcome, [Username]</p>
+        <p>Email: [User Email]</p>
+        <p>Plan: [User Plan]</p>
+
+        <button>Edit Profile</button>
+        <button>Logout</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 E-commerce Store. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
